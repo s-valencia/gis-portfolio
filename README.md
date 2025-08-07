@@ -14,6 +14,6 @@ This portfolio showcases my GIS projects and spatial analysis work, including:
 - **Interactive Web Maps** - JavaScript and ArcGIS API projects
 - **Data Visualization** - Business intelligence and reporting solutions
 
-**Live Portfolio:** [View Here](https://sergiovalen.github.io/gis-portfolio/)
+**Live Portfolio:** [View Here](https://s-valencia.github.io/gis-portfolio/)
 
 **Contact:** S_valencia_@outlook.com | [LinkedIn](https://www.linkedin.com/in/sergio-valencia-a7735b173)
