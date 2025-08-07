@@ -13,12 +13,25 @@
       background-color: #f4f4f4;
       color: #333;
     }
+
+    /* Header with Gradient */
     header {
-      background-color: #005288;
+      background: linear-gradient(135deg, #005288, #007acc);
       color: #fff;
-      padding: 1.5rem 2rem;
+      padding: 2rem;
       text-align: center;
     }
+
+    header h1 {
+      margin-bottom: 0.2rem;
+    }
+
+    header h2 {
+      margin-top: 0.2rem;
+      font-weight: normal;
+    }
+
+    /* Navigation Bar */
     nav {
       background-color: #003f63;
       display: flex;
@@ -26,23 +39,46 @@
       gap: 2rem;
       padding: 1rem;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     .container {
       max-width: 900px;
       margin: auto;
       padding: 2rem;
-      background: white;
     }
+
+    section {
+      margin-bottom: 4rem;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+
+    /* Color-coded section cards */
+    #about {
+      background-color: #e3f2fd;
+    }
+
+    #projects {
+      background-color: #e8f5e9;
+    }
+
+    #contact {
+      background-color: #fff3e0;
+    }
+
     h1, h2 {
       margin-top: 0;
     }
+
     .button {
       display: inline-block;
       background-color: #007acc;
@@ -52,17 +88,28 @@
       border-radius: 5px;
       margin-top: 1rem;
     }
+
     .button:hover {
       background-color: #005f99;
     }
+
     footer {
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
       color: #777;
     }
-    section {
-      margin-bottom: 4rem;
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    a {
+      color: #007acc;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -70,7 +117,7 @@
 
   <header>
     <h1>Sergio Valencia</h1>
-    <h2>GIS Portfolio</h2>
+    <h2>Building smarter maps, apps, and decisions with geospatial intelligence.</h2>
   </header>
 
   <nav>
