@@ -5,35 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sergio Valencia | GIS Portfolio</title>
   <style>
+    /* ====== Reset & Base ====== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
       scroll-behavior: smooth;
-      background-color: #f4f4f4;
-      color: #333;
     }
 
-    /* Header with Gradient */
+    a {
+      color: #66d9ef;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ====== Header ====== */
     header {
-      background: linear-gradient(135deg, #005288, #007acc);
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #fff;
       padding: 2rem;
       text-align: center;
     }
 
     header h1 {
-      margin-bottom: 0.2rem;
+      font-size: 2.5rem;
+      margin-bottom: 0.3rem;
     }
 
     header h2 {
-      margin-top: 0.2rem;
-      font-weight: normal;
+      font-weight: 300;
+      font-size: 1.2rem;
     }
 
-    /* Navigation Bar */
+    /* ====== Navigation ====== */
     nav {
-      background-color: #003f63;
+      background-color: #1e1e1e;
       display: flex;
       justify-content: center;
       gap: 2rem;
@@ -41,75 +51,97 @@
     }
 
     nav a {
-      color: white;
-      text-decoration: none;
+      color: #66d9ef;
       font-weight: bold;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
-
+    /* ====== Layout Container ====== */
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 2rem;
     }
 
     section {
       margin-bottom: 4rem;
-      padding: 1.5rem;
       border-radius: 8px;
     }
 
-    /* Color-coded section cards */
     #about {
-      background-color: #e3f2fd;
+      background-color: #1a1a1a;
+      padding: 2rem;
     }
 
     #projects {
-      background-color: #e8f5e9;
+      background-color: #1a1a1a;
+      padding: 2rem;
     }
 
     #contact {
-      background-color: #fff3e0;
-    }
-
-    h1, h2 {
-      margin-top: 0;
+      background-color: #1a1a1a;
+      padding: 2rem;
     }
 
     .button {
       display: inline-block;
-      background-color: #007acc;
-      color: white;
+      background-color: #66d9ef;
+      color: #121212;
       padding: 0.6rem 1.2rem;
       text-decoration: none;
       border-radius: 5px;
       margin-top: 1rem;
+      font-weight: bold;
     }
 
     .button:hover {
-      background-color: #005f99;
+      background-color: #33c5f3;
     }
 
+    /* ====== Project Cards ====== */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .project-card {
+      background-color: #262626;
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(102, 217, 239, 0.2);
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .project-card-content {
+      padding: 1rem;
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    /* ====== Footer ====== */
     footer {
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 1.5rem;
       color: #777;
+      background-color: #1e1e1e;
     }
 
     ul {
       padding-left: 1.2rem;
-    }
-
-    a {
-      color: #007acc;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -122,26 +154,54 @@
 
   <nav>
     <a href="#about">About Me</a>
-    <a href="#projects">Featured Projects</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <div class="container">
-    
+
     <section id="about">
       <h2>About Me</h2>
       <p>I'm a dedicated GIS professional with over 5 years of experience transforming complex geospatial challenges into innovative solutions across utility, architectural, and technology sectors. My expertise spans the full spectrum of GIS development—from advanced spatial analysis and database administration to enterprise application development and automation.</p>
       <p>Currently serving as a GIS Developer at PG&E, I specialize in supporting critical Electric and Gas utility operations through sophisticated geospatial analysis, custom web application development, and enterprise system integrations. My technical proficiency encompasses the entire ESRI ecosystem, including ArcGIS Desktop, ArcGIS Pro, ArcGIS Enterprise, and ArcGIS Online, complemented by strong programming skills in Python, JavaScript, and SQL.</p>
       <p>What sets me apart is my ability to bridge technical expertise with business impact. I've consistently delivered measurable results, such as enhancing data extraction efficiency by 30% through API optimization, reducing project hours by 20% with custom tooling, and improving data accuracy by 25% through strategic automation initiatives. My experience with cloud technologies like AWS Lambda and proficiency in database management with PostgreSQL enable me to architect scalable, enterprise-grade solutions.</p>
       <p>With dual Bachelor's degrees in Environmental Science and Spatial Analysis, plus a Master's in Geographic Information Science from the University of Redlands, I bring both theoretical depth and practical application to every project. I'm passionate about leveraging geospatial technology to solve real-world problems, whether it's optimizing utility asset management, enhancing accessibility compliance, or streamlining complex data workflows.</p>
-      <p>My approach combines technical innovation with collaborative leadership, having successfully led teams and managed projects that deliver both immediate operational improvements and long-term strategic value.</p>
-
       <a href="resume.pdf" class="button" target="_blank">📄 Download Resume</a>
     </section>
 
     <section id="projects">
       <h2>Featured Projects</h2>
-      <p>Coming soon! This section will showcase interactive maps, dashboards, Python scripts, and geospatial applications.</p>
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Map_of_California_location_in_USA.svg" alt="Map preview">
+          <div class="project-card-content">
+            <h3>California Fire Risk Dashboard</h3>
+            <p>ArcGIS Online dashboard that visualizes wildfire risk zones, historical fire perimeters, and real-time weather overlays.</p>
+            <a href="#" class="button" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/GeoJSON_logo.svg/320px-GeoJSON_logo.svg.png" alt="GeoJSON map">
+          <div class="project-card-content">
+            <h3>Python ETL with GeoJSON</h3>
+            <p>Automated ETL script using Python and GDAL to process, validate, and publish GeoJSON data into PostgreSQL.</p>
+            <a href="#" class="button" target="_blank">View Code</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Openstreetmap_logo.svg/320px-Openstreetmap_logo.svg.png" alt="OpenStreetMap">
+          <div class="project-card-content">
+            <h3>Field Data Collection App</h3>
+            <p>Web app built with Leaflet.js to track field crews collecting utility asset data, syncing with ArcGIS Enterprise.</p>
+            <a href="#" class="button" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
