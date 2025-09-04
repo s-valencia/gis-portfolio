@@ -1,23 +1,255 @@
-<!-- Project 1 -->
-<div class="project-card">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Map_of_California_location_in_USA.svg" alt="Map preview">
-  <div class="project-card-content">
-    <h3>California Fire Risk Dashboard</h3>
-    <p><em>Status: In progress</em></p>
-    <p>ArcGIS Online dashboard that visualizes wildfire risk zones, historical fire perimeters, and real-time weather overlays.</p>
-    <a href="#" class="button" target="_blank">View Project</a>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sergio Valencia | GIS Portfolio</title>
+  <style>
+    /* ====== Reset & Base ====== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
 
-...
+    a {
+      color: #66d9ef;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
 
-<!-- Project 4 -->
-<div class="project-card">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Openstreetmap_logo.svg/320px-Openstreetmap_logo.svg.png" alt="OpenStreetMap">
-  <div class="project-card-content">
-    <h3>Field Data Collection App</h3>
-    <p><em>Status: In progress</em></p>
-    <p>Web app built with Leaflet.js to track field crews collecting utility asset data, syncing with ArcGIS Enterprise.</p>
-    <a href="#" class="button" target="_blank">Live Demo</a>
+    /* ====== Header ====== */
+    header {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.3rem;
+    }
+
+    header h2 {
+      font-weight: 300;
+      font-size: 1.2rem;
+    }
+
+    /* ====== Navigation ====== */
+    nav {
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #66d9ef;
+      font-weight: bold;
+    }
+
+    /* ====== Layout Container ====== */
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      border-radius: 8px;
+    }
+
+    #about {
+      background-color: #1a1a1a;
+      padding: 2rem;
+    }
+
+    #projects {
+      background-color: #1a1a1a;
+      padding: 2rem;
+    }
+
+    #contact {
+      background-color: #1a1a1a;
+      padding: 2rem;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #66d9ef;
+      color: #121212;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #33c5f3;
+    }
+
+    /* ====== Project Cards ====== */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .project-card {
+      background-color: #262626;
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(102, 217, 239, 0.2);
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .project-card-content {
+      padding: 1rem;
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    /* ====== Footer ====== */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #777;
+      background-color: #1e1e1e;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sergio Valencia</h1>
+    <h2>Transforming Data Into Geographic Solutions.</h2>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a dedicated GIS professional with over 5 years of experience transforming complex geospatial challenges into innovative solutions across utility, architectural, and technology sectors. My expertise spans the full spectrum of GIS development—from advanced spatial analysis and database administration to enterprise application development and automation.</p>
+      <br>
+      <p>Currently serving as a GIS Developer at PG&E, I specialize in supporting critical Electric and Gas utility operations through sophisticated geospatial analysis, custom web application development, and enterprise system integrations. My technical proficiency encompasses the entire ESRI ecosystem, including ArcGIS Desktop, ArcGIS Pro, ArcGIS Enterprise, and ArcGIS Online, complemented by strong programming skills in Python, JavaScript, and SQL.</p>
+      <br>
+      <p>What sets me apart is my ability to bridge technical expertise with business impact. I've consistently delivered measurable results, such as enhancing data extraction efficiency by 30% through API optimization, reducing project hours by 20% with custom tooling, and improving data accuracy by 25% through strategic automation initiatives. My experience with cloud technologies like AWS Lambda and proficiency in database management with PostgreSQL enable me to architect scalable, enterprise-grade solutions.</p>
+      <br>
+      <p>With dual Bachelor's degrees in Environmental Science and Spatial Analysis, plus a Master's in Geographic Information Science from the University of Redlands, I bring both theoretical depth and practical application to every project. I'm passionate about leveraging geospatial technology to solve real-world problems, whether it's optimizing utility asset management, enhancing accessibility compliance, or streamlining complex data workflows.</p>
+      <a href="resume.pdf" class="button" target="_blank">📄 Download Resume</a>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Map_of_California_location_in_USA.svg" alt="Map preview">
+          <div class="project-card-content">
+            <h3>California Fire Risk Dashboard</h3>
+            <p><em>Status: In progress</em></p>
+            <p>ArcGIS Online dashboard that visualizes wildfire risk zones, historical fire perimeters, and real-time weather overlays.</p>
+            <a href="#" class="button" target="_blank">View Project</a>
+          </div>
+        </div>
+               
+        <!-- Project 2: ProtectedSeas Severity Classification Tool -->
+        <div class="project-card">
+          <!-- Replace the image src with your own screenshot if you have one -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python classification tool preview">
+          <div class="project-card-content">
+            <h3>ProtectedSeas Severity Classification Tool</h3>
+            <p>Python tool that reads a CSV/Excel of ProtectedSeas-style attributes, computes a 0–100 severity score with configurable weights, and adds a <code>Severity_Level</code> column.</p>
+            <a href="https://github.com/your-username/protectedseas-severity-tool" class="button" target="_blank">View on GitHub</a>
+            <!-- Optional: add a sample data link once you have it -->
+            <!-- <a href="https://github.com/your-username/protectedseas-severity-tool/blob/main/sample_data.csv" class="button" target="_blank">Sample Data</a> -->
+          </div>
+        </div>
+
+        <!-- Project 3: geocode_pipeline script -->
+        <div class="project-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python geocoding ETL">
+          <div class="project-card-content">
+            <h3>Geocoding & Reverse Geocoding ETL</h3>
+            <p>Python ETL that batch-geocodes addresses or reverse-geocodes coordinates, with retries, rate limiting, and CSV + GeoJSON outputs.</p>
+            <a href="https://github.com/your-username/geocoding-etl-pipeline" class="button" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Openstreetmap_logo.svg/320px-Openstreetmap_logo.svg.png" alt="OpenStreetMap">
+          <div class="project-card-content">
+            <h3>Field Data Collection App</h3>
+            <p><em>Status: In progress</em></p>
+            <p>Web app built with Leaflet.js to track field crews collecting utility asset data, syncing with ArcGIS Enterprise.</p>
+            <a href="#" class="button" target="_blank">Live Demo</a>
+          </div>
+        </div>
+    </section>
+
+    <section id="awards">
+      <h2>🏆 Professional Recognition</h2>
+      <img src="images/sergio_valencia_award.png" alt="2025 GIS Employee of the Year - Sergio Valencia" style="max-width:100%; height:auto; border-radius:12px;">
+      
+      <h3>PG&E Geographic Information Systems – 2025 Employee of the Year</h3>
+      <p>Recognized for outstanding contributions to PG&E’s Access Roads Management (ARM) and Defensible Space programs.</p>
+      <ul>
+        <li><strong>Process Automation:</strong> Developed Python scripts using <code>arcpy</code> and ArcGIS libraries to automate workflows, improving data accuracy and saving time.</li>
+        <li><strong>Data Management:</strong> Designed and implemented an archive layer for work orders and herbicide application data, streamlining reporting processes.</li>
+        <li><strong>Workflow Optimization:</strong> Optimized a critical Python script to refine Defensible Space reports, ensuring compliance with project requirements while avoiding information overload.</li>
+        <li><strong>Team Impact:</strong> Demonstrated adaptability, problem-solving, and collaboration—enhancing team efficiency and fostering innovation.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me at:</p>
+      <ul>
+        <li>Email: <a href="mailto:s_valencia_@outlook.com">s_valencia_@outlook.com</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/sergio" target="_blank">linkedin.com/in/sergio</a></li>
+        <li>GitHub: <a href="https://github.com/sergio" target="_blank">github.com/sergio</a></li>
+      </ul>
+    </section>
+
   </div>
-</div>
+
+  <footer>
+    &copy; 2025 Sergio Valencia
+  </footer>
+
+</body>
+</html>
