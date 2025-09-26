@@ -177,13 +177,27 @@
       <div class="project-grid">
         <!-- Project 1 -->
         <div class="project-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Map_of_California_location_in_USA.svg" alt="Map preview">
-          <div class="project-card-content">
-            <h3>California Fire Risk Dashboard</h3>
-            <p><em>Status: In progress</em></p>
-            <p>ArcGIS Online dashboard that visualizes wildfire risk zones, historical fire perimeters, and real-time weather overlays.</p>
-            <a href="#" class="button" target="_blank">View Project</a>
+          <h3>Utility Asset Insights Dashboard</h3>
+          <p>
+            Interactive Tableau dashboard showcasing utility asset performance trends, 
+            maintenance schedules, and key metrics to support data-driven decision-making.
+          </p>
+        
+          <!-- Embed Tableau -->
+          <div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.4); margin: 1rem 0;">
+            <iframe 
+              src="https://public.tableau.com/views/YourDashboardName/Sheet1?:embed=y&:display_count=yes" 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 12px;" 
+              allowfullscreen>
+            </iframe>
           </div>
+        
+          <!-- Optional "View Full Dashboard" button -->
+          <a href="https://public.tableau.com/views/YourDashboardName/Sheet1" 
+             target="_blank" 
+             class="project-link">
+            View Full Dashboard
+          </a>
         </div>
                
         <!-- Project 2: ProtectedSeas Severity Classification Tool -->
